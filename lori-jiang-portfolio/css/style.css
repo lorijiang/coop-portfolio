@@ -1,0 +1,643 @@
+
+/* ----- GENERAL ----- */
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #393433;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  color: #393433;
+}
+
+h3 {
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #393433;
+}
+
+h4 {
+  margin-top: 24px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #8c8c8c;
+}
+
+p {
+  font-size: 15.5px;
+  line-height: 26px;
+  margin-bottom: 24px;
+  color: #393433;
+}
+
+li {
+  font-size: 15.5px;
+  margin-top: 12px;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* ------- NAVIGATION BAR --------*/
+
+nav {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%; /* space of buttonsrelative to edge of screen*/
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: auto;
+}
+
+.home-logo, .home-logo:hover, .home-logo:focus {
+  text-decoration: none;
+  border-style: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: white;
+  color: #393433;
+  border-style: solid;
+  border-radius: 24px;
+  border-width: 1px;
+  border-color: #393433;
+  margin-top: 24px; /* space of buttons relative to each other*/
+  margin-left: 12px;
+  padding: 10px 20px;
+}
+
+nav a:hover, nav nav a:focus {
+  text-decoration: none;
+  border-style: solid;
+  border-radius: 24px;
+  border-width: 1px;
+  border-color: #393433;
+  background-color:rgb(232, 231, 231);
+}
+
+
+/* ------- HOME PAGE --------*/
+
+.home-banner {
+  margin-left: 0; /* space between green background and edge of screen */
+  margin-right: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: left;
+  background-color:white;
+}
+
+.home-banner p {
+  padding: 10% 15%; /* padding is relative between text and parent element */
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.featured-work-heading {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.cover-photo {
+  margin-top: 0;
+  margin-bottom: 0;
+  object-fit: fill;
+  width: 80%;
+  height: 100%;
+}
+
+.cover-photo-button {
+  border-style: none;
+  border-radius: 24px;
+  background: none;
+  padding: 0;
+  margin: 0;
+  height: 55%; /* determines width of buttons and distance between them too*/
+}
+
+.cover-photo-button img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.project-container button {
+  border-radius: 24px;
+  border-style: hidden;
+  margin-left: 5%; /* distance between buttons*/
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(204, 197, 190, 0.25);
+          box-shadow: 0px 0px 5px 5px rgba(204, 197, 190, 0.25);
+}
+
+.project-container button:hover {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(161, 148, 146, 0.5);
+          box-shadow: 0px 0px 15px 5px rgba(161, 148, 146, 0.5);
+}
+
+.project-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: space-evenly;
+  text-align: left;
+  margin-left: 15%; /* distance between buttons and edge*/
+  margin-right: 15%;
+}
+
+.project-container div {
+  width: 50%;
+}
+
+@media screen and (max-width: 720px) {
+  .project-container div {
+    width: 95%;
+  }
+}
+
+.project-container h3 {
+  margin-top: 12px;
+  font-size: 24px;
+}
+
+.project-container p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 720px) {
+  .project-container button {
+    width: 100%;
+  }
+}
+
+/* ----- ABOUT PAGE ----- */
+
+.bio-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+}
+.bio-container .bio-text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 600px;
+}
+.bio-container .bio-text h1 {
+  text-align: left;
+}
+.bio-container .bio-text p {
+  margin-top: 18px;
+  margin-right: 36px;
+}
+.bio-container .flexbox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 24px;
+}
+.bio-container .contact-buttons button {
+  width: 80px;
+  background-color: white;
+  border-style: none;
+}
+.bio-container #linkedin:hover, .bio-container #email:hover {
+  border: 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+.bio-container .contact-photo {
+  width: 250px;
+  height: 350px;
+  background-color: grey;
+  margin: 12px;
+}
+
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.bio-img {
+  max-width: 280px;
+  border-radius: 12px; 
+}
+
+.hobby-text {
+  text-align: center;
+  max-width: 900px;
+}
+
+.travel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.travel-container img {
+  max-height: 100%;
+  margin: 12px;
+  border-radius: 12px;
+  max-width: 240px;
+  
+}
+
+/* ---------- PROCESS ANALYSIS ----------*/
+
+a {
+  text-decoration: none;
+}
+
+.text-width {
+  /* display: flex; */
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.img-width {
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  /* margin-top: 24px;
+  margin-bottom: 24px; */
+}
+
+@media screen and (max-width: 950px) {
+  .text-width {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .img-width {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* margin-top: 24px;
+    margin-bottom: 24px; */
+  }
+}
+
+.p2-prototype-link {
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(75, 122, 75);
+}
+
+.p2-prototype-link:hover {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+/* ----- FOOTER ---- */
+footer {
+  margin-top: 120px;
+  padding: 10px 0 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer a {
+  margin: 0 12px;
+}
+footer .flexbox .work {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 24px;
+}
+
+footer .footer-credit {
+  width: 100%;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* Hand wave, code source from Jake Jarvis at: https://codepen.io/jakejarvis/pen/pBZWZw */ 
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+ /* .hong0 {
+  max-width: 100% !important; 
+} */
+
+.hong1 {
+  display: flex;
+  max-width: 100% !important; 
+  justify-content: space-between;
+} 
+
+ .hong2 {
+  width: 48%;
+} 
+
+/* .lori0 {
+  max-width: 100% !important; 
+}
+
+.lori1 {
+  max-width: 100% !important; 
+} */
+
+.jiang0 {
+  display: flex;
+  width: 100% !important; 
+  justify-content: space-between;
+}
+
+.jiang1 {
+  width: 25%;
+}
+
+.jiang3 {
+  width: 75%;
+}
+
+.mock1 {
+  width: 40%;
+}
+
+.mock3 {
+  width: 55%;
+
+}
+
+.row {
+  display: flex;
+  width: 100% !important; 
+  justify-content: space-between;
+}
+
+.col {
+  width: 25%;
+}
+
+.context-container {
+  background-color: #E0F18B;
+  border-radius: 24px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 24px;
+  padding-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.client-container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.problem-solution-container {
+  background-color:#E0F18B;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+/* .usability-pain-points h4{
+  color:rgb(130, 171, 83); 
+} */
+
+.participatory-workshop-container h2 {
+  margin-bottom: 24px;
+}
+
+.participatory-workshop-container p {
+  margin-bottom: 12px;
+  line-height: 26px;
+}
+
+.participatory-workshop-container h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.pain-points {
+  background-color: #E0F18B;
+  border-radius: 24px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 12px;
+}
+
+.pain-points p {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+u {
+  border-bottom: 2px solid rgb(80, 126, 56); /* Or whatever color you want */
+    text-decoration: none;
+}
+
+
+.key-solution {
+  background-color: #E0F18B;
+  border-radius: 24px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 24px;
+  padding-bottom: 0px;
+  margin-bottom: 24px;
+}
+
+.wireframe-container img {
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.problem-statement-container {
+  background-color:#E0F18B;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.final-design-container{
+  background-color:#E0F18B;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.final-design-container-334 {
+  background-color:#ab0000;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  justify-content:left;
+}
+
+.final-design-container-334 h2, .final-design-container-334 h3{
+  color: white;
+}
+
+.two, .four{
+  background-color:#E0F18B;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.two li, .four li, .key-decisions-container li {
+  width: 100%;
+  margin-left: 3%;
+}
+
+#skip-to-final {
+  text-align: center;
+}
+
+.key-decisions-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.key-decisions-container-334 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.key-decisions-container-334 img{
+  width: 40%; /* forces height of gif to shrink*/
+}
+
+
+
+@media screen and (max-width: 950px) {
+  .problem-solution-container {
+    background-color:#E0F18B;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .problem-statement-container {
+    background-color:#E0F18B;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  
+  .final-design-container {
+    background-color:#E0F18B;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .text-width {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .img-width {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+.demo-button {
+  background-color: #6A9241; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 36px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
